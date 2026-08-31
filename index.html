@@ -43,8 +43,6 @@
         </nav>
 
     </header>
-
-
     <main>
 
         <section id="inicio" class="hero-pollo">
@@ -66,37 +64,34 @@
 
         </section>
 
-
         <section id="menu" class="seccion-comida">
 
-    <h2>Nuestro menú</h2>
+            <h2>Nuestro menú</h2>
 
-    <p class="texto-comida">
-        Conoce algunos de nuestros platos favoritos.
-    </p>
+            <p class="texto-comida">
+                Conoce algunos de nuestros platos favoritos.
+            </p>
+
+            <article class="buscador-platos">
+
+                <label for="buscar-pollo">
+                    Buscar plato
+                </label>
+
+                <input
+                    type="text"
+                    id="buscar-pollo"
+                    placeholder="Escribe el nombre de un plato">
+
+            </article>
+
+            <article
+                id="menu-pollos"
+                class="contenedor-platos">
+            </article>
 
 
-    <article class="buscador-platos">
-
-        <label for="buscar-pollo">
-            Buscar plato
-        </label>
-
-        <input
-            type="text"
-            id="buscar-pollo"
-            placeholder="Escribe el nombre de un plato">
-
-    </article>
-
-
-    <article
-        id="menu-pollos"
-        class="contenedor-platos">
-    </article>
-
-</section>
-
+        </section>
 
         <section id="nosotros" class="seccion-comida seccion-clara">
 
@@ -109,10 +104,11 @@
                     <h3>Tradición y sabor</h3>
 
                     <p>
-                        En Sabor a la Brasa encuentras un sabor único y bien bacano
+                        En Sabor a la Brasa encuentras un sabor único y bien bacano.
                     </p>
 
                 </div>
+
 
                 <img
                     src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80"
@@ -121,8 +117,6 @@
             </article>
 
         </section>
-
-
         <section id="pedido" class="seccion-comida">
 
             <article class="formulario-pedido">
@@ -130,17 +124,123 @@
                 <h2>Realiza tu pedido</h2>
 
                 <p class="texto-comida">
-                    Llena el siguiente formulario y nos pondremos en contacto contigo
-                    para coordinar la entrega de tu pedido.
+                    Completa los siguientes datos para solicitar tu pedido.
                 </p>
+
+
+                <form id="formulario-pollo">
+
+                    <div class="campo-comida">
+
+                        <label for="nombre-cliente">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre-cliente"
+                            required>
+
+                    </div>
+
+                    <div class="campo-comida">
+
+                        <label for="correo-cliente">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo-cliente"
+                            required>
+
+                    </div>
+                    <div class="campo-comida">
+
+                        <label for="telefono-cliente">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono-cliente"
+                            required>
+
+                    </div>
+
+
+                    <!-- FECHA -->
+                    <div class="campo-comida">
+
+                        <label for="fecha-pedido">
+                            Fecha del pedido
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fecha-pedido"
+                            required>
+
+                    </div>
+
+                    <div class="campo-comida">
+
+                        <label for="tipo-pedido">
+                            Tipo de pedido
+                        </label>
+
+                        <select
+                            id="tipo-pedido"
+                            required>
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="Domicilio">
+                                Domicilio
+                            </option>
+
+                            <option value="Recoger en el restaurante">
+                                Recoger en el restaurante
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CONFIRMACIÓN -->
+                    <div class="confirmacion-pedido">
+
+                        <input
+                            type="checkbox"
+                            id="confirmar-pedido"
+                            required>
+
+                        <label for="confirmar-pedido">
+                            Confirmo que los datos son correctos.
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="boton boton-principal">
+
+                        Enviar pedido
+
+                    </button>
+
+                </form>
+
+                <p id="mensaje-cocina"></p>
 
             </article>
 
         </section>
 
     </main>
-
-
     <footer>
 
         <p>
@@ -149,8 +249,6 @@
         </p>
 
     </footer>
-
-
     <script src="script.js"></script>
 
 </body>
