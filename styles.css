@@ -239,3 +239,108 @@ footer {
     }
 
 }
+
+
+.buscador-platos {
+    max-width: 500px;
+
+    margin: 0 auto 30px auto;
+}
+
+.buscador-platos label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.buscador-platos input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid var(--borde-plato);
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+.contenedor-platos {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: var(--espacio-comida);
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.tarjeta-pollo {
+    width: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: var(--blanco-cocina);
+
+    border: 1px solid var(--borde-plato);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-pollo:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-pollo img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+}
+
+.informacion-pollo {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 18px;
+}
+
+.informacion-pollo h3 {
+    margin-top: 0;
+
+    color: var(--rojo-pollo);
+}
+
+.informacion-pollo p {
+    line-height: 1.5;
+}
+
+.precio-pollo {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: var(--rojo-pollo);
+
+    margin-top: auto;
+}
